@@ -86,7 +86,7 @@ class ShopScreen extends StatelessWidget {
                   const Icon(Icons.search),
                   Text(
                     'Search',
-                    style: AppTheme().textTheme.headline1,
+                    style: appTheme().textTheme.headline1,
                   )
                 ],
               ),
@@ -98,7 +98,7 @@ class ShopScreen extends StatelessWidget {
                 child: InkWell(
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => ShoppingBasket()));
+                        builder: (context) => const ShoppingBasket()));
                   },
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -113,7 +113,7 @@ class ShopScreen extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.only(right: 8.0),
                         child: Text('${providerValue.shoppingBasket.length}',
-                            style: AppTheme().textTheme.headline1!),
+                            style: appTheme().textTheme.headline1!),
                       ),
                     ],
                   ),
@@ -161,7 +161,7 @@ class ShopScreen extends StatelessWidget {
                 left: 15,
                 child: Text(
                   clothes[index].name,
-                  style: AppTheme().textTheme.headline2,
+                  style: appTheme().textTheme.headline2,
                 ),
               ),
               Hero(
@@ -178,7 +178,7 @@ class ShopScreen extends StatelessWidget {
                 left: 15,
                 child: Text(
                   '\$${clothes[index].price}',
-                  style: AppTheme().textTheme.headline3,
+                  style: appTheme().textTheme.headline3,
                 ),
               ),
               Positioned(
@@ -186,7 +186,7 @@ class ShopScreen extends StatelessWidget {
                 left: 15,
                 child: Text(
                   'Shirt',
-                  style: AppTheme().textTheme.headline4,
+                  style: appTheme().textTheme.headline4,
                 ),
               ),
               Consumer<ProviderManagement>(
@@ -229,7 +229,7 @@ class ShopScreen extends StatelessWidget {
                 ),
                 title: Text(
                   reviews[index].userName,
-                  style: AppTheme().textTheme.headline2,
+                  style: appTheme().textTheme.headline2,
                 ),
                 subtitle: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -247,7 +247,7 @@ class ShopScreen extends StatelessWidget {
               ),
               Text(
                 reviews[index].comment,
-                style: AppTheme().textTheme.headline5,
+                style: appTheme().textTheme.headline5,
               )
             ],
           );
@@ -276,7 +276,7 @@ class ShopScreen extends StatelessWidget {
           Center(
             child: Text(
               'Modather Ali',
-              style: AppTheme().textTheme.headline1,
+              style: appTheme().textTheme.headline1,
             ),
           ),
           const SizedBox(
@@ -299,7 +299,7 @@ class ShopScreen extends StatelessWidget {
       onTap: () {},
       title: Text(
         title,
-        style: AppTheme()
+        style: appTheme()
             .textTheme
             .headline2!
             .copyWith(fontWeight: FontWeight.w400),

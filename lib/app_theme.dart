@@ -1,8 +1,6 @@
-// ignore_for_file: non_constant_identifier_names
-
 import 'package:flutter/material.dart';
 
-ThemeData AppTheme() {
+ThemeData appTheme() {
   return ThemeData().copyWith(
     primaryColor: Colors.orangeAccent,
     textTheme: const TextTheme(

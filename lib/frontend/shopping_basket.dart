@@ -1,5 +1,4 @@
 import 'package:electronic_shop/app_theme.dart';
-import 'package:electronic_shop/methods/clothes.dart';
 import 'package:electronic_shop/methods/provider_management.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -29,15 +28,15 @@ class ShoppingBasket extends StatelessWidget {
                       children: [
                         Text(
                           providerValue.shoppingBasket[index].name,
-                          style: AppTheme().textTheme.headline2,
+                          style: appTheme().textTheme.headline2,
                         ),
                         Text(
                           'Amount: ${providerValue.amountOfPurchases[index]}',
-                          style: AppTheme().textTheme.headline5,
+                          style: appTheme().textTheme.headline5,
                         ),
                         Text(
                           "Price: \$${providerValue.shoppingBasket[index].price * providerValue.amountOfPurchases[index]}",
-                          style: AppTheme()
+                          style: appTheme()
                               .textTheme
                               .headline5!
                               .copyWith(color: Colors.green),
@@ -76,7 +75,7 @@ class ShoppingBasket extends StatelessWidget {
                     actionsAlignment: MainAxisAlignment.center,
                     content: Text(
                       "Total Price: \$${totalPrice}",
-                      style: AppTheme().textTheme.headline3,
+                      style: appTheme().textTheme.headline3,
                     ),
                     actions: [
                       TextButton(
@@ -85,7 +84,7 @@ class ShoppingBasket extends StatelessWidget {
                           },
                           child: Text(
                             "Done",
-                            style: AppTheme().textTheme.headline4,
+                            style: appTheme().textTheme.headline4,
                           ))
                     ],
                   );

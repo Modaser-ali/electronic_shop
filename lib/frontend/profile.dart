@@ -23,7 +23,7 @@ class Profile extends StatelessWidget {
                 children: [
                   Text(
                     "User Name:",
-                    style: AppTheme().textTheme.headline2,
+                    style: appTheme().textTheme.headline2,
                   ),
                   const Text(
                     "Modather Ali",
@@ -37,11 +37,11 @@ class Profile extends StatelessWidget {
                   ),
                   Text(
                     "Balance:",
-                    style: AppTheme().textTheme.headline2,
+                    style: appTheme().textTheme.headline2,
                   ),
                   Text(
                     "\$999.99",
-                    style: AppTheme().textTheme.headline3,
+                    style: appTheme().textTheme.headline3,
                   ),
                   const SizedBox(
                     height: 30,

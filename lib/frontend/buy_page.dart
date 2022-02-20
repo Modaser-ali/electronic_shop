@@ -54,7 +54,7 @@ class BuyPage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Text(clothe.name, style: AppTheme().textTheme.headline2),
+                Text(clothe.name, style: appTheme().textTheme.headline2),
                 Consumer<ProviderManagement>(
                   builder: (context, providerValue, chile) {
                     return IconButton(
@@ -105,7 +105,7 @@ class BuyPage extends StatelessWidget {
                             },
                             child: Text(
                               '+',
-                              style: AppTheme()
+                              style: appTheme()
                                   .textTheme
                                   .headline3
                                   ?.copyWith(fontSize: 24),
@@ -124,7 +124,7 @@ class BuyPage extends StatelessWidget {
                             },
                             child: Text(
                               '-',
-                              style: AppTheme()
+                              style: appTheme()
                                   .textTheme
                                   .headline3
                                   ?.copyWith(fontSize: 24, color: Colors.red),

@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       create: (BuildContext context) => ProviderManagement(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        theme: AppTheme(),
+        theme: appTheme(),
         title: 'Electronic Shop',
         home: HomePage(),
       ),

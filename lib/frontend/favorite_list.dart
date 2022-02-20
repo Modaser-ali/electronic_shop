@@ -31,7 +31,7 @@ class FavoriteList extends StatelessWidget {
                   children: [
                     Text(
                       providerValue.userFavoriteList[index].name,
-                      style: AppTheme().textTheme.headline1,
+                      style: appTheme().textTheme.headline1,
                       maxLines: 1,
                     ),
                     Image.asset(
@@ -43,7 +43,7 @@ class FavoriteList extends StatelessWidget {
                       children: [
                         Text(
                           '\$${providerValue.userFavoriteList[index].price}',
-                          style: AppTheme().textTheme.headline3,
+                          style: appTheme().textTheme.headline3,
                         ),
                         const IconButton(
                           onPressed: null,
